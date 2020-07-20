@@ -15,7 +15,7 @@ interface Retro2 {
     @GET("/users/{username}")
     fun getPhn(@Path("username") username: String?): Call<Body1?>?
 
-    @POST("/opt/123456789")
+    @POST("/otp/123456789")
     fun getotp(@Body map: HashMap<String, String?>): Call<Void?>?
 
     @GET("/otp/123456789/{number}")
