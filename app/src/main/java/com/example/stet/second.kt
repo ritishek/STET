@@ -130,9 +130,13 @@ class second : AppCompatActivity() {
             startActivity(i)
         }
 
-        page_2_aadhar_verify.setOnClickListener {
-            val URL: String = "http://10.0.2.2:4000"
+        page_2_send_aadhar_otp.setOnClickListener {
+            val URL: String = "http://192.168.43.114:4000"
             verifyAadhar(aadhar, URL)
+        }
+        page_2_aadhar_verify.setOnClickListener {
+            val URL: String = "http://192.168.43.114:4000"
+            verifyotp(URL)
         }
 
 
@@ -517,40 +521,13 @@ class second : AppCompatActivity() {
                                                 this@second,
                                                 "OTP Generated ", Toast.LENGTH_LONG
                                             ).show()
-                                            val call3: Call<Void?>? =
-                                                retrofitInterface2?.matchotp(page_2_aadhar_otp.text.toString())
-                                            call3!!.enqueue(object : Callback<Void?> {
-                                                override fun onResponse(
-                                                    p00: Call<Void?>,
-                                                    p11: Response<Void?>
-                                                ) {
-                                                    if (p11.code() == 200) {
-                                                        Toast.makeText(
-                                                            this@second,
-                                                            "Aadhar Verified ", Toast.LENGTH_LONG
-                                                        ).show()
-                                                    } else {
-                                                        Toast.makeText(
-                                                            this@second,
-                                                            "Aadhar Not Verified ",
-                                                            Toast.LENGTH_LONG
-                                                        ).show()
-                                                    }
-                                                }
+                                            page_2_aadhar_verify.visibility=View.VISIBLE
+                                            page_2_aadhar_check.text="OTP Sent"
 
-                                                override fun onFailure(
-                                                    p00: Call<Void?>,
-                                                    t4: Throwable
-                                                ) {
-                                                    Toast.makeText(
-                                                        this@second, t4.message,
-                                                        Toast.LENGTH_LONG
-                                                    ).show()
-
-                                                }
-                                            })
-
-
+                                        }
+                                        else
+                                        {
+                                            page_2_aadhar_check.text="Failed to Send OTP"
                                         }
                                     }
 
@@ -559,11 +536,15 @@ class second : AppCompatActivity() {
                                             this@second, t3.message,
                                             Toast.LENGTH_LONG
                                         ).show()
-
+                                        page_2_aadhar_check.text="Failed to Send OTP"
                                     }
                                 })
 
 
+                            }
+                            else
+                            {
+                                page_2_aadhar_check.text="Failed to Fetch Phone Number"
                             }
                         }
 
@@ -575,9 +556,14 @@ class second : AppCompatActivity() {
                                 this@second, t2.message,
                                 Toast.LENGTH_LONG
                             ).show()
-
+                            page_2_aadhar_check.text="Failed to Fetch Phone Number"
                         }
                     })
+
+                }
+                else
+                {
+                    page_2_aadhar_check.text="Failed to Validate Aadhar"
                 }
             }
 
@@ -589,11 +575,50 @@ class second : AppCompatActivity() {
                     this@second, t1.message,
                     Toast.LENGTH_LONG
                 ).show()
-
+                page_2_aadhar_check.text="Failed to Validate Aadhar"
             }
         })
 
 
+    }
+    private fun verifyotp(URL: String){
+        val retrofit: Retrofit = Retrofit.Builder()
+            .baseUrl(URL)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+        var retrofitInterface2: Retro2? = retrofit.create(Retro2::class.java)
+        val call3: Call<Void?>? =
+            retrofitInterface2?.matchotp(page_2_aadhar_otp.text.toString())
+        call3!!.enqueue(object : Callback<Void?> {
+            override fun onResponse(
+                p00: Call<Void?>,
+                p11: Response<Void?>
+            ) {
+                if (p11.code() == 200) {
+                    Toast.makeText(
+                        this@second,
+                        "Aadhar Verified ", Toast.LENGTH_LONG
+                    ).show()
+                } else {
+                    Toast.makeText(
+                        this@second,
+                        "Aadhar Not Verified ",
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+            }
+
+            override fun onFailure(
+                p00: Call<Void?>,
+                t4: Throwable
+            ) {
+                Toast.makeText(
+                    this@second, t4.message,
+                    Toast.LENGTH_LONG
+                ).show()
+
+            }
+        })
     }
 
 }
