@@ -41,7 +41,7 @@ class ten : AppCompatActivity() {
                 && validNumber(
                     page_1_signup_phn_et,
                     10
-                ) == 0 && validNumber(page_1_signup_Edtaadhar, 16) == 0
+                ) == 0 && validNumber(page_1_signup_Edtaadhar, 12) == 0
                 && isValidPassword(page_1_signup_Edtpass) == 0
             ) {
 
