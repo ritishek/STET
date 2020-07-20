@@ -222,10 +222,9 @@
                     android:layout_height="40dp"
                     android:background="@drawable/button_shape"
                     android:text="Send OTP">
-
                 </Button>
-
                 <TextView
+                    android:id="@+id/page_2_aadhar_check"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="30dp"
