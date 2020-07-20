@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/status_img"
+            android:layout_width="170dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/stet_logo" />
+
+        <TextView
+            android:id="@+id/status_stet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="Sikkim Teacher Eligibility Test-2020"
+            android:textSize="30sp"
+            android:textStyle="bold"
+
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/background"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/status_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:progress="@android:integer/config_mediumAnimTime" />
+
+            <Button
+                android:id="@+id/status_print"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:text="Print this page"/>
+
+            <TextView
+                android:id="@+id/status_reg_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="10dp"
+                android:text="Registration No." />
+
+            <TextView
+                android:id="@+id/status_reg_no_visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="1938279290"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/status_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Status"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/status_pi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Personal Info"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/box_2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_registratio_no"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Registration No." />
+
+                    <TextView
+                        android:id="@+id/status_view_registration_no"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_aadhar"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Aadhar Card No." />
+
+                    <TextView
+                        android:id="@+id/status_view_aadhar"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_candidate"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Candidate's Name" />
+
+                    <TextView
+                        android:id="@+id/status_view_candidate"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_gender"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Candidate's Gender" />
+
+                    <TextView
+                        android:id="@+id/status_view_gender"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_father-husband"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Father/Hudband" />
+
+                    <TextView
+                        android:id="@+id/status_view_father-husband"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_father"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Father/Husband Name" />
+
+                    <TextView
+                        android:id="@+id/status_view_father"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_mother"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Mother's Name" />
+
+                    <TextView
+                        android:id="@+id/status_view_mother"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_dob"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Date of Birth" />
+
+                    <TextView
+                        android:id="@+id/status_view_dob"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_community"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Community" />
+
+                    <TextView
+                        android:id="@+id/status_view_community"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_mobile"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Mobile No." />
+
+                    <TextView
+                        android:id="@+id/status_view_mobile"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_mobile2"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Additional Mobile No." />
+
+                    <TextView
+                        android:id="@+id/status_view_mobile2"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_address"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Permanent Address" />
+
+                    <TextView
+                        android:id="@+id/status_view_address"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_dist"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="District" />
+
+                    <TextView
+                        android:id="@+id/status_view_dist"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_state"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="State" />
+
+                    <TextView
+                        android:id="@+id/status_view_state"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_pin"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Pin/Zip Code" />
+
+                    <TextView
+                        android:id="@+id/staus_view_pin"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_address2"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Additional Address" />
+
+                    <TextView
+                        android:id="@+id/status_view_address2"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_email"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="E-mail ID" />
+
+                    <TextView
+                        android:id="@+id/status_view_email"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_email2"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Additional E-mail ID" />
+
+                    <TextView
+                        android:id="@+id/status_view_email2"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Academic Info"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/box_2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/box_2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_application_category"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Applicatio Category"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/status_application_view_category"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text=""
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/box_2"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/status_application_paper_choice"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Language Paper Choice"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/status_application_view_paper_choice"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text=""
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/box_2"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/status_application_min_quali"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Minimum Qualification"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/status_application_view_min_quali"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text=""
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/box_2"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/status_application_percentage"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Percentage Obtained"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/status_application_view_percentage"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text=""
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/box_2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_application_prof_quali"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Professional Qualification"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/status_application_view_prof_quali"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text=""
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/box_2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_application_uni"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="University"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/status_application_view_uni"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text=""
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/staus_scanned_photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Scanned Photos"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/box_2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_photo"
+                        android:layout_width="158dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center"
+                        android:text="Photo" />
+
+                    <ImageView
+                        android:id="@+id/status_view_photo"
+                        android:layout_width="158dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/box_2" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_signature"
+                        android:layout_width="158dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center"
+                        android:text="Signature" />
+
+                    <ImageView
+                        android:id="@+id/status_view_signature"
+                        android:layout_width="158dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/box_2" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/status_fee_details1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Fee Payment Details"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/box_2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_payment_mode"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Payment Mode" />
+
+                    <TextView
+                        android:id="@+id/status_view_payment_mode"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_tran_ID"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Transaction ID" />
+
+                    <TextView
+                        android:id="@+id/status_view_tran_ID"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_exam_date"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Exam Date" />
+
+                    <TextView
+                        android:id="@+id/status_view_exam_date"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_transaction"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Date of Transactiom" />
+
+                    <TextView
+                        android:id="@+id/status_view_transaction"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:paddingLeft="10dp"
+                        android:text="" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/status_list_of_docs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="List Of Documents Uploaded"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/box_2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_docs"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Documents" />
+
+                    <TextView
+                        android:id="@+id/status_uploaded_or_not"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Uploaded or not" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_certi1"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Certificate1" />
+
+                    <TextView
+                        android:id="@+id/status_view_certi1"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:text="NA" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_certi2"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Certificate2" />
+
+                    <TextView
+                        android:id="@+id/status_view_certi2"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:text="NA" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_certi3"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Certificate3" />
+
+                    <TextView
+                        android:id="@+id/status_view_certi3"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:text="NA" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_certi4"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Certificate4" />
+
+                    <TextView
+                        android:id="@+id/status_view_certi4"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:text="NA" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status_certi5"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:text="Certificate5" />
+
+                    <TextView
+                        android:id="@+id/status_view_certi5"
+                        android:layout_width="158dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/box_2"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:text="NA" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/status_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:text="I hereby solemnly affirm that all the particulars stated by me in this Application are true and correct. I have not concealed any information. However, if any information furnished herein is fraudulent, incorrect or untrue, I understand that I am liable to criminal prosecution and I also agree to forego my admission. Further that the selection and admission to the course is liable to be cancelled at any time during the entire degree program. I agree to abide by the rules and regulations governing the examination as contained in the Information Bulletin, which I have duly studied and understood thoroughly."
+                    android:textSize="9dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/status_back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_shape"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text="BACK"/>
+    </LinearLayout>
+
+</ScrollView>

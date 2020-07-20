@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/background_2"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/faqs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal"
+        android:text="FAQS About STET"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/qus1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Question 1 ?"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/ans1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Answer 1"
+        android:textColor="@android:color/background_dark"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/qus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Question 2 ?"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/ans2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Answer 2"
+        android:textColor="@android:color/background_dark"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/qus3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Question 3 ?"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/ans3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Answer 3"
+        android:textColor="@android:color/background_dark"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/qus4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Question 4 ?"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/ans4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Answer 4"
+        android:textColor="@android:color/background_dark"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/faqs_back"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/button_shape"
+        android:text="BACK" />
+
+
+</LinearLayout>

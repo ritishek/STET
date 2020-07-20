@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/page_7_image"
+            android:layout_width="170dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/stet_logo">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/page_7_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="Sikkim Teacher Eligibility Test-2020"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/page_7_progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:progress="@android:integer/config_mediumAnimTime"
+
+                    />
+
+                <TextView
+                    android:id="@+id/page_7_upload_documents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="Upload Your File"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/page_7_photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Upload Your Passport Size Photo"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/page_7_select_photo"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/box"
+                            android:text="Choose"
+                            android:textColor="@android:color/holo_blue_bright"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/page_7_or_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="OR" />
+
+                        <Button
+                            android:id="@+id/page_7_photo_cam"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/box"
+                            android:text="Take"
+                            android:textColor="@android:color/holo_blue_bright"
+                            android:textSize="13dp" />
+
+
+                        <Button
+                            android:id="@+id/page_7_photo_upload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/button_shape"
+                            android:foreground="?attr/selectableItemBackgroundBorderless"
+                            android:text="UPLOAD"
+                            android:textSize="13dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/page_7_birth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Birth Certificate"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/page_7_select_birth"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/box"
+                            android:text="CHOOSE"
+                            android:textColor="@android:color/holo_blue_bright"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/page_7_or_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="OR" />
+
+                        <Button
+                            android:id="@+id/page_7_birth_cam"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="0dp"
+                            android:background="@drawable/box"
+                            android:text="TAKE"
+                            android:textColor="@android:color/holo_blue_bright"
+                            android:textSize="13dp" />
+
+                        <Button
+                            android:id="@+id/page_7_birth_upload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/button_shape"
+                            android:foreground="?attr/selectableItemBackgroundBorderless"
+                            android:text="UPLOAD"
+                            android:textSize="13dp"/>
+
+                        <TextView
+                            android:id="@+id/page_7_birth_ch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="Uploaded"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textSize="8dp"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/page_7_community"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Community Certificate"
+                        android:textSize="18sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/page_7_select_community"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/box"
+                            android:text="Choose"
+                            android:textColor="@android:color/holo_blue_bright"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/page_7_or_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="OR" />
+
+                        <Button
+                            android:id="@+id/page_7_community_cam"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="0dp"
+                            android:background="@drawable/box"
+                            android:text="TAKE"
+                            android:textColor="@android:color/holo_blue_bright"
+                            android:textSize="13dp" />
+
+                        <Button
+                            android:id="@+id/page_7_community_upload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/button_shape"
+                            android:foreground="?attr/selectableItemBackgroundBorderless"
+                            android:text="UPLOAD"
+                            android:textSize="13dp"/>
+
+                        <TextView
+                            android:id="@+id/page_7_community_ch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="Uploaded"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textSize="8dp"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/page_7_signature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Signature"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/page_7_select_signature"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/box"
+                            android:text="CHOOSE"
+                            android:textColor="@android:color/holo_blue_bright"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/page_7_or_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="OR" />
+
+                        <Button
+                            android:id="@+id/page_7_signature_cam"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="0dp"
+                            android:background="@drawable/box"
+                            android:text="TAKE"
+                            android:textColor="@android:color/holo_blue_bright"
+                            android:textSize="13dp" />
+
+                        <Button
+                            android:id="@+id/page_7_signature_upload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/button_shape"
+                            android:foreground="?attr/selectableItemBackgroundBorderless"
+                            android:text="UPLOAD"
+                            android:textSize="13dp"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/page_7_subject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Sikkim Subject Certificate"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/page_7_select_subject"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/box"
+                            android:text="CHOOSE"
+                            android:textColor="@android:color/holo_blue_bright"
+
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/page_7_or_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="OR" />
+
+                        <Button
+                            android:id="@+id/page_7_subject_cam"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="0dp"
+                            android:background="@drawable/box"
+                            android:text="TAKE"
+                            android:textColor="@android:color/holo_blue_bright"
+                            android:textSize="13dp" />
+
+                        <Button
+                            android:id="@+id/page_7_subject_upload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/button_shape"
+                            android:foreground="?attr/selectableItemBackgroundBorderless"
+                            android:text="UPLOAD"
+                            android:textSize="13dp"/>
+
+                        <TextView
+                            android:id="@+id/page_7_subject_ch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="Uploaded"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textSize="8dp"
+
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/page_7_aadhar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Aadhar Card"
+                        android:textSize="18sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="0dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/page_7_select_aadhar"
+                                android:layout_width="70dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:background="@drawable/box"
+                                android:text="CHOOSE"
+                                android:textColor="@android:color/holo_blue_bright"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/page_7_or6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="OR" />
+
+                            <Button
+                                android:id="@+id/page_7_aadhar_cam"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="0dp"
+                                android:background="@drawable/box"
+                                android:text="TAKE"
+                                android:textColor="@android:color/holo_blue_bright"
+                                android:textSize="13dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/page_7_aadhar_upload"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/button_shape"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                android:text="UPLOAD"
+                                android:textSize="13dp"/>
+
+                            <Button
+                                android:id="@+id/page_7_aadhat_digi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/button_shape"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                android:text="Digilocker"
+                                android:textSize="13dp"/>
+
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/page_7_aadhar_ch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="Uploaded"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textSize="8dp"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/page_7_10th_marksheet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="10th Marksheet"
+                        android:textSize="18sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/page_7_select_10th"
+                                android:layout_width="70dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:background="@drawable/box"
+                                android:text="CHOOSE"
+                                android:textColor="@android:color/holo_blue_bright"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/page_7_or_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="OR" />
+
+
+                            <Button
+                                android:id="@+id/page_7_10th_cam"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="0dp"
+                                android:background="@drawable/box"
+                                android:text="TAKE"
+                                android:textColor="@android:color/holo_blue_bright"
+                                android:textSize="13dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/page_7_10th_upload"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/button_shape"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                android:text="UPLOAD"
+                                android:textSize="13dp"/>
+
+                            <Button
+                                android:id="@+id/page_7_10th_digi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/button_shape"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                android:text="Digilocker"
+                                android:textSize="13dp"/>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/page_7_12th_marksheet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="12th Marksheet"
+                        android:textSize="18sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/page_7_select_12th"
+                                android:layout_width="70dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:background="@drawable/box"
+                                android:text="CHOOSE"
+                                android:textColor="@android:color/holo_blue_bright"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/page_7_or_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="OR" />
+
+                            <Button
+                                android:id="@+id/page_7_12th_cam"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="0dp"
+                                android:background="@drawable/box"
+                                android:text="TAKE"
+                                android:textColor="@android:color/holo_blue_bright"
+                                android:textSize="13dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/page_7_12th_upload"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/button_shape"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                android:text="UPLOAD"
+                                android:textSize="13dp"/>
+
+                            <Button
+                                android:id="@+id/page_7_12th_digi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/button_shape"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                android:text="Digilocker"
+                                android:textSize="13dp"/>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/page_7_12th_ch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="Uploaded"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textSize="8dp"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/page_7_graduationM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Graduation Marksheet"
+                        android:textSize="18sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/page_7_select_graduationM"
+                                android:layout_width="70dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:background="@drawable/box"
+                                android:text="CHOOSE"
+                                android:textColor="@android:color/holo_blue_bright"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/page_7_or_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="OR" />
+
+                            <Button
+                                android:id="@+id/page_7_graduationM_cam"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="0dp"
+                                android:background="@drawable/box"
+                                android:text="TAKE"
+                                android:textColor="@android:color/holo_blue_bright"
+                                android:textSize="13dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/page_7_GraduationM_upload"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/button_shape"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                android:text="UPLOAD"
+                                android:textSize="13dp"/>
+
+                            <Button
+                                android:id="@+id/page_7_graduationM_digi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/button_shape"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                android:text="Digilocker"
+                                android:textSize="13dp"/>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/page_7_graduationM_ch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="Uploaded"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textSize="8dp"
+
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/page_7_graduationC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Graduation Certificate"
+                        android:textSize="18sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/page_7_select_graduationC"
+                                android:layout_width="70dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:background="@drawable/box"
+                                android:text="CHOOSE"
+                                android:textColor="@android:color/holo_blue_bright"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/page_7_or_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="OR" />
+
+                            <Button
+                                android:id="@+id/page_7_graduationC_cam"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="0dp"
+                                android:background="@drawable/box"
+                                android:text="TAKE"
+                                android:textColor="@android:color/holo_blue_bright"
+                                android:textSize="13dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/page_7_graduationC_uplaod"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/button_shape"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                android:text="UPLOAD"
+                                android:textSize="13dp"/>
+
+                            <Button
+                                android:id="@+id/page_7_graduationC_digi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/button_shape"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                android:text="Digilocker"
+                                android:textSize="13dp"/>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/page_7_graduationC_ch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="Uploaded"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textSize="8dp"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/page_7_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="The certificates i have uploaded is correct according to my knowledge."
+                    android:textSize="10dp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/page_7_back"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="@drawable/button_shape"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:text="BACK"
+                        android:textSize="17sp"/>
+
+                    <Button
+                        android:id="@+id/page_7_next"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="100dp"
+                        android:background="@drawable/button_shape"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:text="NEXT"
+                        android:textSize="17sp"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

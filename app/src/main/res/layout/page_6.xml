@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/page_6_image"
+        android:layout_width="170dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/stet_logo">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/page_6_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="Sikkim Teacher Eligibility Test-2020"
+        android:textSize="30sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+
+        <ProgressBar
+            android:id="@+id/page_6_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:progress="@android:integer/config_mediumAnimTime" />
+
+        <TextView
+            android:id="@+id/page_6_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="28dp"
+            android:gravity="center"
+            android:text="Payment"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/page_6_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_shape"
+            android:text="Payment" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/page_6_back"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/button_shape"
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/page_6_next"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="120dp"
+                android:background="@drawable/button_shape"
+                android:text="Next" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

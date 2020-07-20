@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+
+<resources>
+    <string name="true_tick">\u2713</string>
+
+    <string-array name="textview_id">
+
+        <item> Hindi_text</item>
+        <item> English_text</item>
+
+    </string-array>
+
+
+    <string name="my_app_id">my_app-cfjpb</string>
+    <string name="app_name">Stage1</string>
+
+    <string name="Hii">hii</string>
+
+    <string name="hiihindi">ही</string>
+
+    <string name="stet_logo">STET Logo</string>
+
+    <string name="select">Select</string>
+
+    <string name="enter_password">Enter Password</string>
+
+    <string name="enter_application_no">Enter Application No</string>
+
+    <string name="textview">TextView</string>
+
+    <string name="application_no">APPLICATION NO</string>
+
+    <string name="enter_text_shown_in_image">Enter Text Shown in Image</string>
+
+    <string name="sign_in">SIGN IN</string>
+
+    <string name="password">PASSWORD</string>
+
+    <string name="security_pin">Security Pin</string>
+
+    <string name="forget_password">Forget Password ?</string>
+
+    <string name="forget_application_no">Forget Application No ?</string>
+
+    <string name="todo">TODO</string>
+    <string name="nexmo_application_id">nexmo_application_id</string>
+    <string name="nexmo_shared_secret_key"> </string>
+
+
+    <string-array name="community">
+        <item>Select</item>
+        <item>General</item>
+
+        <item>OBC</item>
+
+        <item>SC</item>
+
+        <item>ST</item>
+
+    </string-array>
+
+
+    <string-array name="language_choice">
+        <item>Select</item>
+        <item>Nepali</item>
+
+        <item>Bhutia</item>
+
+        <item>Lepcha</item>
+
+        <item>Limboo</item>
+
+        <item>Hindi</item>
+
+    </string-array>
+
+    <string-array name="min_qualification">
+        <item>Select</item>
+        <item>XIIth</item>
+        <item>Graduate</item>
+    </string-array>
+
+    <string-array name="prof_qualification">
+        <item>Select</item>
+        <item>D.El.Ed</item>
+        <item>B.Ed</item>
+        <item>BA B.Ed</item>
+        <item>BSc B.Ed</item>
+    </string-array>
+
+
+    <string-array name="states">
+        <item>Select</item>
+        <item>Andhra Pradesh</item>
+
+        <item>Arunachal Pradesh</item>
+
+        <item>Assam</item>
+
+        <item>Bihar</item>
+
+        <item>Chhattisgarh</item>
+
+        <item>Goa</item>
+
+        <item>Gujarat</item>
+
+        <item>Haryana</item>
+
+        <item>Himachal Pradesh</item>
+
+        <item>Jammu And Kashmir</item>
+
+        <item>Jharkhand</item>
+
+        <item>Karnataka</item>
+
+        <item>Kerela</item>
+
+        <item>Madhya Pradesh</item>
+
+        <item>Maharashtra</item>
+
+        <item>Manipur</item>
+
+        <item>Meghalaya</item>
+
+        <item>Mizoram</item>
+
+        <item>Nagaland</item>
+
+        <item>Odisha</item>
+
+        <item>Punjab</item>
+
+        <item>Rajasthan</item>
+
+        <item>Sikkim</item>
+
+        <item>Tamil Nadu</item>
+
+        <item>Telangana</item>
+
+        <item>Tripura</item>
+
+        <item>Uttar Pradesh</item>
+
+        <item>Uttarakhand</item>
+
+        <item>West Bengal</item>
+
+    </string-array>
+    <string-array name="application_category">
+        <item>Select</item>
+        <item>Primary Teacher</item>
+        <item>GT Arts</item>
+        <item>GT Science</item>
+    </string-array>
+
+</resources>
