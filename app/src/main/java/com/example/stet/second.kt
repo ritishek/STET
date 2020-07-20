@@ -131,7 +131,7 @@ class second : AppCompatActivity() {
         }
 
         page_2_aadhar_verify.setOnClickListener {
-            val URL: String = ""
+            val URL: String = "http://localhost:4000"
             verifyAadhar(aadhar, URL)
         }
 
