@@ -1,6 +1,6 @@
 # STET ANDROID APPLICATION 
 
-## Introduction
+# Introduction
 
 > For making process of Registration, Admit card  and Result declaration online.
 # Brief Description (Non-Technical) 
@@ -41,11 +41,11 @@
 
 # How to run the application:
 ```
-- Download Code from Github.
-- Open Android Studio.
-- Click on File-> New-> Import Project.
-- Select Directory/Folder.
-- Build the project.
+ Download Code from Github.
+ Open Android Studio.
+ Click on File-> New-> Import Project.
+ Select Directory/Folder.
+ Build the project.
 ```
  
 #  Important Points about Test Mode and Production mode:
@@ -59,7 +59,7 @@
 	- Final OTP verification is compulsary.
 
 # User-Id and Password for testing purpose:
-	-phone:"9986612132" password:"Rk#123"
+	phone:"9986612132" password:"Rk#123"
 
 # APIs: 
 - Razorpay api for payment through razorpay.
